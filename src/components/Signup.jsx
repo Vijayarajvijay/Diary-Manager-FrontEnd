@@ -22,7 +22,7 @@ let navigate=useNavigate()
                     <img className="logo" src={logo} alt="Logo" style={{width:"250px", height:"80px", marginLeft:"-100px"}}/>
                 </a>
                 <div className="my-form__wrapper">
-                    <div className="login-welcome-row col-6">
+                    <div className="login-welcome-row ">
                         <h1>Create your account👋</h1>
                     
                     </div>
