@@ -14,7 +14,7 @@ let navigate=useNavigate()
 
   return (
    <>
-      <div className="login-wrapper">
+      <div className="login-wrapper" >
             <div className="login-side">
                 <a href="#" title="Logo">
                     <img className="logo" src={logo} alt="Logo" style={{width:"250px", height:"80px", marginLeft:"-100px"}}/>
@@ -86,7 +86,7 @@ let navigate=useNavigate()
                         <div className="my-form__actions">
                             <div className="my-form__row">
                                 <span>Did you forget your password?</span>
-                                <a href="#" title="Reset Password">
+                                <a href="#" title="Reset Password" onClick={()=>navigate('/forgetpassword')}>
                                     Reset Password
                                 </a>
                             </div>

@@ -270,26 +270,38 @@ body {
 
 .text-field label {
     color: var(--secondary);
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
     letter-spacing: .03rem;
-    z-index: 10;
+    z-index: 10 !important;
+    
 }
 
 @media (max-width: 640px) {
     .login-wrapper {
         grid-template-columns: 1fr;
         height: 100vh;
+        padding-top: 30px;
     }
     
     .info-side {
         flex-direction: column-reverse;
         padding: 48px 48px 48px 32px;
     }
+    .logo{
+margin: 50px 0px 0px 130px !important;
+
+
+    }
+    .login-welcome-row{
+      text-align: center;
+    }
 }
 
+/* -------------Login and Signup Css ends here---------------- */
 
-  /* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap'); */
+  
+/* ------------------Home page Css starts here------------- */
 
 
 
@@ -401,6 +413,8 @@ margin: 30% 0;
 font-size: 30px;
 }
 }
+
+/* ------------------Home page Css starts here------------- */
 
 
 
