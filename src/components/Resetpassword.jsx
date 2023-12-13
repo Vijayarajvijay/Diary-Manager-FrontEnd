@@ -9,10 +9,10 @@ function Resetpassword() {
 let navigate = useNavigate()
   return (
     <>
-    <div className='container-fluid' > 
+    <div className='container-fluid' id='reset-full' > 
     <div className="login-side">
                
-                <div className="my-form__wrapper" style={{marginTop:"-120px",paddingBottom:"25px"}}>
+                <div className="my-form__wrapper" id='reset-det' style={{marginTop:"-120px",paddingBottom:"25px"}}>
                     <div className="login-welcome-row" style={{textAlign:"center"}}>
                         <h1> Reset Password </h1>
                         <p>Enter your new password</p>
@@ -61,7 +61,7 @@ let navigate = useNavigate()
                             />
                         </div>
                         <input type="submit" className="my-form__button" value="Update Password"/>
-                        <div className="my-form__signup" >
+                        <div className="my-form__signup" id='rest-log' >
                               
                                 <a href="#" title="Login" onClick={()=>navigate('/login')} >
                                     Login

@@ -10,10 +10,10 @@ function Forgetpassword() {
     let navigate = useNavigate()
   return (
    <>
-   <div className='container-fluid' > 
-   <div className="login-side" style={{marginTop:"-120px",}} >
+   <div className='container-fluid'  > 
+   <div className="login-side"  style={{marginTop:"-120px",}} >
                
-                <div className="my-form__wrapper" style={{paddingBottom:"20px"}}>
+                <div className="my-form__wrapper" id='forget-full' style={{paddingBottom:"20px"}}>
                     <div style={{textAlign:"center"}} className="login-welcome-row">
                         <h1 >  <b>Forget Password </b></h1>
                         <p> Enter your email to recive reset link</p>
@@ -59,7 +59,7 @@ function Forgetpassword() {
                          
                         <input type="submit" className="my-form__button" value="Send link"/>
                         <div className="my-form__actions">
-                            <div className="my-form__signup" style={{display:"flex",flexDirection:"column", alignItems:"center"}}>
+                            <div className="my-form__signup" id='forget-log' style={{display:"flex",flexDirection:"column", alignItems:"center"}}>
                                 <a href="#" title="Create Account" onClick={()=>navigate('/signup')} >
                                     Create Account
                                 </a>

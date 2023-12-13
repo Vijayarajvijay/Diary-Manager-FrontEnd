@@ -10,9 +10,9 @@ function Home () {
 
 <>
 <header>
-    <div className="wrapper">
+    <div className="wrapper" id='home'>
         <div className="logo">
-            <img src={logo} alt="" style={{width:"220px",height:"100px"}} />
+            <img className='logo-img' src={logo} alt="" style={{width:"220px",height:"100px"}} />
         </div>
 <ul className="nav-area">
 <li><a href="#">Home</a></li>

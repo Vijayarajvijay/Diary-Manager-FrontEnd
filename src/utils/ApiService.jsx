@@ -7,13 +7,13 @@ const AxiosService = axios.create({
     }
 }) 
 
-AxiosService.interceptors.request.use(cofig=>{
-    const token = sessionStorage.getItem('token')
-    if(token)
-    {
-        config.headers.Authorization = `bearer ${token}`
-        return config
-    }
-})
+// AxiosService.interceptors.request.use(cofig=>{
+//     const token = sessionStorage.getItem('token')
+//     if(token)
+//     {
+//         config.headers.Authorization = `bearer ${token}`
+//         return config
+//     }
+// })
 
 export default AxiosService

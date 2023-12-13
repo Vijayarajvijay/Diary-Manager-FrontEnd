@@ -5,6 +5,7 @@ import Login from '../components/Login'
 import Home from '../components/Home'
 import Forgetpassword from '../components/Forgetpassword'
 import Resetpassword from '../components/Resetpassword'
+import Dashboard from '../components/Dashboard'
 function AppRoutes() {
   return (
   <Routes>
@@ -14,6 +15,7 @@ function AppRoutes() {
   <Route path='/home' element={<Home/>}/>
   <Route path='/forgetpassword' element={<Forgetpassword/>}/>
   <Route path='/resetpassword' element={<Resetpassword/>}/>
+  <Route path='/dashboard' element={<Dashboard/>}/>
   <Route path='/*' element={<Navigate to = '/home'/>}/>
   
 
