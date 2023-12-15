@@ -4,7 +4,7 @@ import emailimg from '../assets/email.svg';
 import googleimg from '../assets/google.png';
 import passwordimg from '../assets/password.svg';
 import mainimg from '../assets/main.png';
-import logo from '../assets/logomain 1.png';
+import logo from '../assets/dm new logo 1.png'
 import { useNavigate } from 'react-router-dom';
 import AxiosService from '../utils/ApiService';
 import { toast } from 'react-toastify';
@@ -83,12 +83,12 @@ function Login() {
               className="logo"
               src={logo}
               alt="Logo"
-              style={{ width: '250px', height: '80px', marginLeft: '-100px' }}
+              style={{ width: '260px', height: '130px', marginLeft: '150px', marginTop:"30px" }}
             />
           </a>
           <div className="my-form__wrapper">
             <div className="login-welcome-row">
-              <h1>Welcome back &#x1F44F;</h1>
+              <h1>Welcome back !</h1>
               <p>Please enter your details!</p>
             </div>
             <form className="my-form">

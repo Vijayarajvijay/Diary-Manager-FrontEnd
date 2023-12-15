@@ -4,7 +4,7 @@ import emailimg from '../assets/email.svg';
 import googleimg from '../assets/google.png';
 import passwordimg from '../assets/password.svg';
 import mainimg from '../assets/main.png';
-import logo from '../assets/logomain 1.png';
+import logo from '../assets/dm new logo 1.png';
 import { useNavigate } from 'react-router-dom';
 import userimage from '../assets/user1.png';
 import AxiosService from '../utils/ApiService';
@@ -68,7 +68,7 @@ function Signup() {
               className="logo"
               src={logo}
               alt="Logo"
-              style={{ width: '250px', height: '80px', marginLeft: '-100px' }}
+              style={{ width: '260px', height: '130px', marginLeft: '200px', marginTop:"30px" }}
             />
           </a>
           <div className="my-form__wrapper">
