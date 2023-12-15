@@ -276,6 +276,9 @@ body {
     z-index: 10 !important;
     
 }
+.socials-row{
+  cursor: pointer;
+}
 
 @media (max-width: 640px) {
     .login-wrapper {
@@ -307,7 +310,7 @@ margin: 50px 0px 0px 70px !important;
     }
    #create-ac{
     padding: 0px 0px 0px 0px;
-    margin-left: 0px;
+    margin-left: -35px;
    }
 
    #log-det{
@@ -335,21 +338,22 @@ margin-top: 100px;
    }
    #log-forget{
     position:absolute;
-    bottom: 123px;
-    right: 2px;
+    bottom: 80px;
+    right: 0px;
    }
    #cheak{
   position:absolute;
   left: 10px;
-  bottom: 130px;
+  bottom: 115px;
   ;
    }
    .log-sp{
-    padding-right: 190px;
+    padding-right: 90px;
     
    }
    #log-btn{
-    margin-top: 12px;
+    margin-top: 0px;
+ 
     
    }
    
@@ -458,7 +462,7 @@ header{
  .logo-img {
   width: 400px !important;
   height: 150px !important;
-  margin-left: -65px;
+  margin-left: -90px;
 }
 .nav-area {
 float: none;
@@ -474,7 +478,7 @@ text-align: center;
     .welcome-text {
 width: 100%;
 height: auto;
-margin: 460px 0px 0px 0px;
+margin: 350px 0px 0px 0px;
 }
 .welcome-text h1 {
 font-size: 30px;

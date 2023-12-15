@@ -23,8 +23,17 @@ function Signup() {
   let [email, setEmail] = useState('');
   let [password, setPassword] = useState('');
 
+  const showToast = (provider)=>{
+    toast.info(`Signup with ${provider} is under development`)
+  }
+
   const handleSignup = async (e) => {
     e.preventDefault();
+    if (!userName || !email || !password) {
+        toast.warning('Please fill out all fields');
+        return;
+      }
+    
     setLoading(true);
     try {
       let res = await AxiosService.post('/user/signup', {
@@ -68,11 +77,11 @@ function Signup() {
             </div>
             <form className="my-form">
               <div className="socials-row">
-                <a href="#" title="Use Google">
+                <a onClick={()=>showToast('Google')} title="Use Google">
                   <img src={googleimg} alt="Google" />
                   Sign up with Google
                 </a>
-                <a href="#" title="Use Apple">
+                <a onClick={()=>showToast('Apple')} title="Use Apple">
                   <img src={appleimag} alt="Apple" />
                   Sign up with Apple
                 </a>

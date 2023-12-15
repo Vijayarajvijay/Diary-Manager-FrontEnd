@@ -14,7 +14,7 @@ function AppRoutes() {
   <Route path='/login' element={<Login/>}/>
   <Route path='/home' element={<Home/>}/>
   <Route path='/forgetpassword' element={<Forgetpassword/>}/>
-  <Route path='/resetpassword' element={<Resetpassword/>}/>
+  <Route path='/reset-password/:randomString/:expirationTimestamp' element={<Resetpassword/>}/>
   <Route path='/dashboard' element={<Dashboard/>}/>
   <Route path='/*' element={<Navigate to = '/home'/>}/>
   

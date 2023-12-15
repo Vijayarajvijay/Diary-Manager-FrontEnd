@@ -21,8 +21,17 @@ function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const showToast = (provider)=>{
+    toast.info(`Login with ${provider} is under development`)
+  }
+
   const existUser = async (e) => {
     e.preventDefault();
+    if ( !email || !password) {
+        toast.warning('Please fill out all fields');
+        return;
+      }
+    
     setLoading(true);
     try {
       let res = await AxiosService.post('/user/login', {
@@ -31,22 +40,34 @@ function Login() {
       });
      
       console.log('Response:', res);
-      if (res.status ==201) {
+      if (res.status === 201) {
         toast.success('Login Successfully');
-        sessionStorage.setItem('userName', res.data.userName);
-        sessionStorage.setItem('email', res.data.email);
+        sessionStorage.setItem('userName', res.data.userData.userName);
+        sessionStorage.setItem('email', res.data.userData.email);
         navigate('/dashboard');
-      
       }
-      
-    } 
-    catch (error) {
-      console.log('Error',error);
-    toast.error("Invalid Email or Password  ")
-    } finally {
+    } catch (error) {
       setLoading(false);
+    
+      if (error.response) {
+        const { status } = error.response;
+        
+        if (status === 401) {
+          // Unauthorized: Invalid email or password
+          toast.error('Invalid password');
+        } else if (status === 404) {
+          // Not Found: User does not exist
+          toast.error('Email does not exist');
+        } else {
+          // Other errors
+          toast.error('An error occurred. Please try again.');
+        }
+      } else {
+        // Network error or other issues
+        toast.error('An error occurred. Please try again.');
+      }
     }
-  };
+};
 
   return (
     <>
@@ -71,12 +92,12 @@ function Login() {
               <p>Please enter your details!</p>
             </div>
             <form className="my-form">
-              <div className="socials-row">
-                <a href="#" title="Use Google">
+              <div className="socials-row" >
+                <a onClick={()=>showToast('google')}  title="Use Google">
                   <img src={googleimg} alt="Google" />
                   Log in with Google
                 </a>
-                <a href="#" title="Use Apple">
+                <a  onClick={()=>showToast('Apple')} title="Use Apple">
                   <img src={appleimag} alt="Apple" />
                   Log in with Apple
                 </a>
