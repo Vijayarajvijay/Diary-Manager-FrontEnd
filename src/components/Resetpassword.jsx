@@ -5,6 +5,7 @@ import passwordimg from '../assets/password.svg';
 import { useNavigate, useParams } from 'react-router-dom';
 import AxiosService from '../utils/ApiService';
 import { toast } from 'react-toastify';
+import '/src/App.css'
 
 function Resetpassword() {
   const navigate = useNavigate();

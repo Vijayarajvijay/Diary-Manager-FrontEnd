@@ -8,6 +8,7 @@ import logo from '../assets/dm new logo 1.png'
 import { useNavigate } from 'react-router-dom';
 import AxiosService from '../utils/ApiService';
 import { toast } from 'react-toastify';
+import '/src/App.css'
 
 function Login() {
   let navigate = useNavigate();
@@ -83,7 +84,7 @@ function Login() {
               className="logo"
               src={logo}
               alt="Logo"
-              style={{ width: '260px', height: '130px', marginLeft: '150px', marginTop:"30px" }}
+              style={{ width: '260px', height: '150px', marginLeft: '150px', marginTop:"30px" }}
             />
           </a>
           <div className="my-form__wrapper">

@@ -6,7 +6,7 @@ import googleimg from '../assets/google.png'
 import { useNavigate } from 'react-router-dom'
 import AxiosService from '../utils/ApiService'
 import { toast } from 'react-toastify'
-
+import '/src/App.css'
 
 function Forgetpassword() {
     let navigate = useNavigate()

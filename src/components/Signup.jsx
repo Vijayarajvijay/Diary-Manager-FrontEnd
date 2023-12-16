@@ -10,6 +10,7 @@ import userimage from '../assets/user1.png';
 import AxiosService from '../utils/ApiService';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import '/src/App.css'
 
 function Signup() {
   const [loading, setLoading] = useState(false);
@@ -68,7 +69,7 @@ function Signup() {
               className="logo"
               src={logo}
               alt="Logo"
-              style={{ width: '260px', height: '130px', marginLeft: '200px', marginTop:"30px" }}
+              style={{ width: '260px', height: '150px', marginLeft: '200px', marginTop:"30px" }}
             />
           </a>
           <div className="my-form__wrapper">

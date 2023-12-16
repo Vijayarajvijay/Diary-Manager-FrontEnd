@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/logomain 1.png'
 import { useNavigate } from 'react-router-dom'
-
+import '/src/App.css'
 function Home () {
 
   let navigate = useNavigate()
