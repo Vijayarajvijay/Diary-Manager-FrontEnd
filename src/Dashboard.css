@@ -86,8 +86,8 @@ background-size:1200px 1250px;
     min-width: 300px;
 }  */
 
-#header-dash{
-    background-image:url(../src/assets/header\ dahs.jpg);
+.header{
+    background-image:url(../src/assets/bg.jpg);
 }
 
 
