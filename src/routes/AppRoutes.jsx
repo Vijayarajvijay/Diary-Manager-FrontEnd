@@ -6,17 +6,26 @@ import Home from '../components/Home'
 import Forgetpassword from '../components/Forgetpassword'
 import Resetpassword from '../components/Resetpassword'
 import Dashboard from '../components/Dashboard'
+import Navebar from '../components/Navebar'
+import Creatediary from '../components/Creatediary'
+import Mydiarys from '../components/Mydiarys'
+import Myprofile from '../components/Myprofile'
 function AppRoutes() {
   return (
   <Routes>
   
   <Route path='/signup' element={<Signup/>}/>
-  <Route path='/login' element={<Login/>}/>
+  <Route path='/login' element={ <Login/>}/>
   <Route path='/home' element={<Home/>}/>
   <Route path='/forgetpassword' element={<Forgetpassword/>}/>
   <Route path='/reset-password/:randomString/:expirationTimestamp' element={<Resetpassword/>}/>
   <Route path='/dashboard' element={<Dashboard/>}/>
+  <Route path='/navebar' element={<Navebar/>}/>
+  <Route path='/creatediary' element={<> <Navebar/> <Creatediary/> </>}/>
+  <Route path='/mydiarys' element={<> <Navebar/> <Mydiarys/> </>}/>
+  <Route path='/profile' element={<> <Navebar/> <Myprofile/> </>}/>
   <Route path='/*' element={<Navigate to = '/home'/>}/>
+
   
 
   </Routes>

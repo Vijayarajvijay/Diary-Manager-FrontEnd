@@ -11,10 +11,11 @@ import user1 from '/src/assets/Untitled_design-removebg-preview.png'
 import userblack from '/src/assets/userblack.png'
 import addDiary from '/src/assets/add diary1.png'
 import readdiary from '/src/assets/reed diary.png'
+import { useNavigate } from 'react-router-dom'
 
 function Dashboard() {
 
-    
+    let navigate = useNavigate()
   
 
 
@@ -44,15 +45,16 @@ function Dashboard() {
    Menu
   </button>
   <ul class="dropdown-menu" >
-    <li className='drop-in' style={{width:'200px'}}>
-        <button class="dropdown-item" type="button">
-            <img style={{borderRadius:'70px',width:'30px',marginRight:'10px'}} src={userblack} alt="" /> My Profile </button></li>
-    <li><button  class="dropdown-item" type="button">
-        <img style={{width:'30px',borderRadius:'30px',marginRight:'13px'}} src={addDiary} alt="" />
+    <li className='drop-in ' style={{width:'200px'}}>
+        <button class="dropdown-item btn-primary" type="button" onClick={()=>navigate('/profile')}>
+            <img style={{borderRadius:'70px',width:'30px',marginRight:'10px'}}  src={userblack} alt="" /> My Profile </button></li>
+            
+    <li><button  class="dropdown-item  btn-primary" type="button"  onClick={()=>navigate('/creatediary')} >
+        <img  src={addDiary} style={{width:'30px',borderRadius:'30px',marginRight:'13px'}} alt="" />
         Create Diary</button></li>
    
-    <li><button class="dropdown-item" type="button">
-        <img style={{width:'30px',borderRadius:'20px',marginRight:'15px'}} src={readdiary}>
+    <li><button class="dropdown-item  btn-primary" type="button" onClick={()=>navigate('/mydiarys')} >
+        <img style={{width:'30px',borderRadius:'20px',marginRight:'15px'}} src={readdiary}  >
         
         </img>
         My Diarys</button></li>
