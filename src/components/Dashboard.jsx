@@ -11,6 +11,7 @@ import user1 from '/src/assets/Untitled_design-removebg-preview.png'
 import userblack from '/src/assets/userblack.png'
 import addDiary from '/src/assets/add diary1.png'
 import readdiary from '/src/assets/reed diary.png'
+import bg from '../assets/header dahs.jpg'
 function Dashboard() {
 
     
@@ -23,7 +24,7 @@ function Dashboard() {
 
 
     <div className='wrapper' style={{width:'100%'}}>
-    <header className="header">
+    <header className="header" id='header-dash'>
      <div className="header__top header__top--large clearfix" >
        <div className="logo logo--large" id='top-hed'>
          <a href="/">

@@ -86,6 +86,11 @@ background-size:1200px 1250px;
     min-width: 300px;
 }  */
 
+#header-dash{
+    background-image:url(../src/assets/header\ dahs.jpg);
+}
+
+
 .subscription-section {
     margin: 0 auto;
     margin-top: auto;
@@ -370,9 +375,9 @@ footer {
 /* ------------footer ends here------------ */
 
 
-.header{
+/* .header{
     background-image: url('/src/assets/header\ dahs.jpg') !important;
-}
+} */
 
 
 
