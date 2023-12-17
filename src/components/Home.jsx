@@ -10,34 +10,35 @@ function Home () {
 
 <>
 <header>
-    <div className="wrapper" id='home'>
-        <div className="logo">
-            <img className='logo-img' src={logo} alt="" style={{width:"220px",height:"100px"}} />
+        <div className="wrapper" id='home'>
+          {/* <div className="logo">
+            <img className='logo-img' src={logo} alt="" style={{ width: "220px", height: "100px" }} />
+          </div> */}
+          <ul className="nav-area">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
         </div>
-<ul className="nav-area">
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-</ul>
+        <div className="welcome-text">
+        <div class="container-fluid">
+   <div class="row">
+      <div class="neons" style={{width:""}}>
+         <h1><em>-Diary Manager-</em></h1>
+      </div>
+   </div>
 </div>
-<div className="welcome-text">
-        <h1>
-Welocme  to <br/> 
-Diary  Manager</h1>
-<br/>
-<br/>
-<button class='glowing-btn' onClick={()=>navigate('/login')} style={{width:"140px"}} ><span class='glowing-txt'style={{fontSize:"16px", letterSpacing:"5px"}} >Login </span> </button>
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<button class='glowing-btn' onClick={()=>navigate('/signup')} style={{width:"140px"}} ><span class='glowing-txt'style={{fontSize:"16px", letterSpacing:"5px"}} >Signup </span> </button>
-    </div>
-    
-      
-</header>
-
+          <br />
+          <br />
+          <button className='glowing-btn' onClick={() => navigate('/login')} style={{ width: "140px" }} ><span className='glowing-txt' style={{ fontSize: "16px", letterSpacing: "5px" }} >Login </span> </button>
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          <button className='glowing-btn' onClick={() => navigate('/signup')} style={{ width: "140px" }} ><span className='glowing-txt' style={{ fontSize: "16px", letterSpacing: "5px" }} >Signup </span> </button>
+        </div>
+      </header>
 
 
 </>

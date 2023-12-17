@@ -22,7 +22,7 @@ function Dashboard() {
     <>
 
 
-    
+    <div className='wrapper' style={{width:'100%'}}>
     <header className="header">
      <div className="header__top header__top--large clearfix" >
        <div className="logo logo--large" id='top-hed'>
@@ -53,10 +53,10 @@ function Dashboard() {
         Create Diary</button></li>
    
     <li><button class="dropdown-item" type="button">
-        <img style={{width:'30px',borderRadius:'20px',marginRight:'13px'}} src={readdiary}>
+        <img style={{width:'30px',borderRadius:'20px',marginRight:'15px'}} src={readdiary}>
         
         </img>
-        View My Diary</button></li>
+        My Diarys</button></li>
   </ul>
 </div>
      
@@ -319,7 +319,7 @@ function Dashboard() {
         <h3>Record your most enviable experiences in a diary</h3>
         <p>God watches your actions.</p>
     </div>
-    <small style={{marginRight:'60px'}}>© Atheros Intelligence Ltd. <span id="year"></span>, All rights reserved</small>
+    <small  style={{marginRight:'60px'}}>© Vijayaraj MERN Developer <span id="year"></span>, All rights reserved</small>
 </div>
 </div>
 </footer>
@@ -330,6 +330,7 @@ function Dashboard() {
  <a className="back-to-top-link" id="scroll-to-top" href="javascript:void(0)" title="back to top">
    <span className="back-to-top-icon glyphicon glyphicon-chevron-left"></span>
  </a>
+</div>
 </div>
    </>
   )

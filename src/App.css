@@ -366,6 +366,7 @@ margin-top: 100px;
 
 
 
+
 body{
     font-family: 'Lato', sans-serif;
 }
@@ -412,7 +413,7 @@ text-transform: uppercase;
     position: absolute;
     width: 600px;
     height: 300px;
-    margin: 20% 30%;
+    margin: 15% 30%;
     text-align: center;
 }
 .welcome-text h1{
@@ -503,12 +504,38 @@ font-size: 30px;
   box-sizing: border-box;
 }
 
+/* .neons {
+  padding-top: -100px;
+  padding-right: 500px;
 
+  text-align: center;
+} */
+
+.neons h1 {
+ font-size: rem;
+ text-align: center;
+  font-weight: bold;
+ -webkit-animation: glow 2s ease-in-out infinite alternate;
+ -moz-animation: glow 2s ease-in-out infinite alternate;
+ animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+     color: #fff;
+   text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+ }
+ 
+ to {
+    color: gray;
+   text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+ }
+}
 
 
 
 .glowing-btn {
-    --glow-color: hsl(135, 100%, 69%);
+    --glow-color: hsl(36, 79%, 53%);
   position: relative;
   color: var(--glow-color);
   cursor: pointer;
@@ -539,7 +566,7 @@ font-size: 30px;
     0 0 0.45em var(--glow-color);
   -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
     0 0 0.45em var(--glow-color);
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+  text-shadow: 0 0 0.125em hsla(0, 33%, 85%, 0.3), 0 0 0.45em var(--glow-color);
   animation: text-flicker 3s linear infinite;
 }
 
@@ -577,7 +604,7 @@ font-size: 30px;
 }
 
 .glowing-btn:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(253, 252, 252, 0.8);
   text-shadow: none;
   animation: none;
 }

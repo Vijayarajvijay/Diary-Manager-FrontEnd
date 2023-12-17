@@ -31,10 +31,34 @@
     #navtop{
          margin: 50px 70px 0px 0px;
     }
+    .header{
+ background-image: url(/src/assets/header\ dahs.jpg) !important;
+background-size:1200px 1250px;
+    }
+   .wrapper{
+   width: 100%;
+  padding-left: 0px;
+    
+   }
+   .home__features{
+    background-image:url(/src/assets/dash\ center.jpg) !important
+   }
+   .footer-bottom{
+     margin-left: -80px !important;
+     padding-left: 10px !important;
+
+   }
+   .footer-bottom small{
+   padding-left: 0px !important;
+   margin-right: 0px !important;
+   }
+   
+
+
 }
 
 :root {
-    --primary: #ce871d;
+    --primary: #f0a83d;
     --text-color: white;
     --white: white;
     --text-gray: #FEFEFE;
