@@ -456,7 +456,8 @@ margin: auto;
 }
 header{
   background-size: cover;
-  height: 1200px;
+  background-size:1000px 1200px ;
+  
   background-repeat: no-repeat;
 }
 

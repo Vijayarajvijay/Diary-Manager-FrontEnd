@@ -35,15 +35,13 @@ function Dashboard() {
          </a>
        </div>
        <div className="user-menu d-flex gap-3" id='navtop' >
-     
-     
-         <a className="btn btn-primary" href="/app/">Logout</a>
 
 
-         <div class="dropdown">
+        
+       <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     <img style={{width:'30px ',margin:'0px 4px 0px 0px '}} src={user1}alt="" />
-    menu
+   Menu
   </button>
   <ul class="dropdown-menu" >
     <li className='drop-in' style={{width:'200px'}}>
@@ -60,6 +58,11 @@ function Dashboard() {
         My Diarys</button></li>
   </ul>
 </div>
+     
+     
+         <a className="btn btn-primary" href="/app/">Logout</a>
+
+
      
      </div>
      
