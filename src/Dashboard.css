@@ -371,7 +371,7 @@ footer {
 
 
 .header{
-    background-image: url('/src/assets/header\ dahs.jpg');
+    background-image: url('/src/assets/header\ dahs.jpg') !important;
 }
 
 
