@@ -153,7 +153,7 @@ function Login() {
                 </span>
               </div>
 
-              <input type="submit" id='log-btn' className="my-form__button" onClick={(e)=>existUser(e)} value="Login" />
+              <input type="submit" id='log-btn' className="my-form__button   btn-primary " onClick={(e)=>existUser(e)} value="Login" />
               <div className="my-form__actions" id="log-det">
                 <div className="my-form__signup" id="create-ac">
                   <a href="#"  title="Create Account" onClick={() => navigate('/signup')}>

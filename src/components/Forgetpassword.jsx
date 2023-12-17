@@ -96,7 +96,7 @@ function Forgetpassword() {
                         </div>
                          
                          
-                        <input type="submit" className="my-form__button" onClick={(e)=>sendMail(e)} value="Send link"/>
+                        <input type="submit" className="my-form__button btn-primary" onClick={(e)=>sendMail(e)} value="Send link"/>
                         <div className="my-form__actions">
                             <div className="my-form__signup" id='forget-log' style={{display:"flex",flexDirection:"column", alignItems:"center"}}>
                                 <a href="#" title="Create Account" onClick={()=>navigate('/signup')} >

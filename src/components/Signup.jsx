@@ -158,7 +158,7 @@ function Signup() {
 
               <input
                 type="submit"
-                className="my-form__button"
+                className="my-form__button   btn-primary"
                 onClick={handleSignup}
                 style={{ marginTop: '0px' }}
                 value="Sign up"

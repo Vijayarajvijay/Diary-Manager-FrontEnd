@@ -105,7 +105,7 @@ function Resetpassword() {
                   Show Password
                 </span>
               </div>
-              <input type="button" className="my-form__button" onClick={updatePassword} value="Update Password" />
+              <input type="button" className="my-form__button   btn-primary" onClick={updatePassword} value="Update Password" />
               <div className="my-form__signup" id="rest-log">
                 <a href="#" title="Login" onClick={() => navigate('/login')}>
                   Login
