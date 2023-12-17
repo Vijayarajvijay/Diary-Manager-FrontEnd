@@ -11,7 +11,7 @@ import user1 from '/src/assets/Untitled_design-removebg-preview.png'
 import userblack from '/src/assets/userblack.png'
 import addDiary from '/src/assets/add diary1.png'
 import readdiary from '/src/assets/reed diary.png'
-import bg from '../assets/header dahs.jpg'
+
 function Dashboard() {
 
     
@@ -218,7 +218,7 @@ function Dashboard() {
 
 <div className="footer-columns">
     <div className="footer-links">
-        <div className="footer-logo" style={{width:'300px'}} >
+        <div className="footer-logo"  >
             <img style={{width:'200px'}}  src={footerlogo} />
         </div>
         <section>
@@ -316,7 +316,7 @@ function Dashboard() {
    
 </div>
 <div className="footer-bottom">
-    <div classNameName="footer-description" style={{marginLeft:'60px'}}>
+    <div classNameName="footer-description" style={{marginLeft:'30px'}}>
         <h3>Record your most enviable experiences in a diary</h3>
         <p>God watches your actions.</p>
     </div>
