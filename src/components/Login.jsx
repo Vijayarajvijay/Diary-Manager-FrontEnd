@@ -39,12 +39,13 @@ function Login() {
         email,
         password,
       });
-     
+      console.log(import.meta.env.VITE_API_URL);
+
       console.log('Response:', res);
       if (res.status === 201) {
         toast.success('Login Successfully');
-        sessionStorage.setItem('userName', res.data.userData.userName);
-        sessionStorage.setItem('email', res.data.userData.email);
+        sessionStorage.setItem('token',res.data.token);
+        sessionStorage.setItem('userData', JSON.stringify(res.data.userData));
         navigate('/dashboard');
       }
     } catch (error) {

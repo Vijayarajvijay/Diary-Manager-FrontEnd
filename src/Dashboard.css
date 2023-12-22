@@ -15,6 +15,9 @@
     font-size: 18px;
     font-weight: 800;
  }
+ li a {
+    color: wheat !important;
+ }
 
 /* -----------drop down ------ */
 

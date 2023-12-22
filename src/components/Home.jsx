@@ -1,15 +1,14 @@
-import React from 'react'
-import logo from '../assets/logomain 1.png'
+import React, { useEffect } from 'react'
+// import logo from '../assets/logomain 1.png'
 import { useNavigate } from 'react-router-dom'
 import '/src/App.css'
 function Home () {
-
-  let navigate = useNavigate()
+let navigate = useNavigate()
   return (
 
 
 <>
-<header>
+<header className='homehead'>
         <div className="wrapper" id='home'>
           {/* <div className="logo">
             <img className='logo-img' src={logo} alt="" style={{ width: "220px", height: "100px" }} />
@@ -21,9 +20,9 @@ function Home () {
           </ul>
         </div>
         <div className="welcome-text">
-        <div class="container-fluid">
-   <div class="row">
-      <div class="neons" style={{width:""}}>
+        <div className="container-fluid">
+   <div className="row">
+      <div className="neons" style={{width:""}}>
          <h1><em>-Diary Manager-</em></h1>
       </div>
    </div>

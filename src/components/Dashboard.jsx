@@ -12,13 +12,16 @@ import userblack from '/src/assets/userblack.png'
 import addDiary from '/src/assets/add diary1.png'
 import readdiary from '/src/assets/reed diary.png'
 import { useNavigate } from 'react-router-dom'
-
+import useLogout from '../hooks/useLogout'
 function Dashboard() {
 
     let navigate = useNavigate()
+  let logout = useLogout()
   
 
 
+
+  
 
   return (
     <>
@@ -39,21 +42,21 @@ function Dashboard() {
 
 
         
-       <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+       <div className="dropdown">
+  <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     <img style={{width:'30px ',margin:'0px 4px 0px 0px '}} src={user1}alt="" />
    Menu
   </button>
-  <ul class="dropdown-menu" >
+  <ul className="dropdown-menu" >
     <li className='drop-in ' style={{width:'200px'}}>
-        <button class="dropdown-item btn-primary" type="button" onClick={()=>navigate('/profile')}>
+        <button className="dropdown-item btn-primary" type="button" onClick={()=>navigate('/profile')}>
             <img style={{borderRadius:'70px',width:'30px',marginRight:'10px'}}  src={userblack} alt="" /> My Profile </button></li>
             
-    <li><button  class="dropdown-item  btn-primary" type="button"  onClick={()=>navigate('/creatediary')} >
+    <li><button  className="dropdown-item  btn-primary" type="button"  onClick={()=>navigate('/creatediary')} >
         <img  src={addDiary} style={{width:'30px',borderRadius:'30px',marginRight:'13px'}} alt="" />
         Create Diary</button></li>
    
-    <li><button class="dropdown-item  btn-primary" type="button" onClick={()=>navigate('/mydiarys')} >
+    <li><button className="dropdown-item  btn-primary" type="button" onClick={()=>navigate('/mydiarys')} >
         <img style={{width:'30px',borderRadius:'20px',marginRight:'15px'}} src={readdiary}  >
         
         </img>
@@ -62,7 +65,7 @@ function Dashboard() {
 </div>
      
      
-         <a className="btn btn-primary" href="/app/">Logout</a>
+         <a className="btn btn-primary" onClick={logout} >Logout</a>
 
 
      
@@ -75,6 +78,9 @@ function Dashboard() {
        
      </div>
      </div>
+     
+       
+      
    </header>
    <div className="main main--web">
        
@@ -87,7 +93,7 @@ function Dashboard() {
    <p>You want to keep your thoughts in a place where no one can find them? Or capture great ideas so they do not get lost? The online diary  offers you a safe place for your very personal topics.</p>
 
  <div>
-   <a className="btn btn-primary home__register-btn" href="/account/registration">  Create a New Diary
+   <a className="btn btn-primary home__register-btn" href="/creatediary">  Create a New Diary
 </a>
  </div>
 </div>
@@ -269,7 +275,7 @@ function Dashboard() {
         </section>
         <section>
             <h3>Journals</h3>
-            <ul>
+            <ul >
                 <li>
                     <a href="#" title="Journal prompts">Journal prompts</a>
                 </li>
@@ -320,7 +326,7 @@ function Dashboard() {
     </div>
    
 </div>
-<div className="footer-bottom">
+<div className="footer-bottom" style={{color:'wheat'}}>
     <div classNameName="footer-description" style={{marginLeft:'30px'}}>
         <h3>Record your most enviable experiences in a diary</h3>
         <p>God watches your actions.</p>

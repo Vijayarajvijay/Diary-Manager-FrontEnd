@@ -95,7 +95,7 @@ function Resetpassword() {
                 <img style={{ position: 'absolute', bottom: '60px' }} alt="Password Icon" title="Password Icon" src={passwordimg} />
                 <input
                   id="cheak"
-                  style={{ width: '15px',bottom:'10px', position:"relative",bottom:'10px' }}
+                  style={{ width: '15px',bottom:'10px', position:"relative" }}
                   type="checkbox"
                   checked={showPassword}
                   onChange={togglePasswordVisibility}

@@ -10,6 +10,7 @@ import Navebar from '../components/Navebar'
 import Creatediary from '../components/Creatediary'
 import Mydiarys from '../components/Mydiarys'
 import Myprofile from '../components/Myprofile'
+import EditDiary from '../components/EditDiary'
 function AppRoutes() {
   return (
   <Routes>
@@ -21,10 +22,11 @@ function AppRoutes() {
   <Route path='/reset-password/:randomString/:expirationTimestamp' element={<Resetpassword/>}/>
   <Route path='/dashboard' element={<Dashboard/>}/>
   <Route path='/navebar' element={<Navebar/>}/>
-  <Route path='/creatediary' element={<> <Navebar/> <Creatediary/> </>}/>
+  <Route path='/creatediary' element={ <Creatediary/>}/>
   <Route path='/mydiarys' element={<> <Navebar/> <Mydiarys/> </>}/>
   <Route path='/profile' element={<> <Navebar/> <Myprofile/> </>}/>
-  <Route path='/*' element={<Navigate to = '/home'/>}/>
+  <Route path='/edit/:id' element={<EditDiary/>}/>
+  <Route path='/*' element={<Navigate to = '/login'/>}/>
 
   
 
