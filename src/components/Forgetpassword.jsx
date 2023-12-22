@@ -54,7 +54,7 @@ function Forgetpassword() {
                 <div className="my-form__wrapper" id='forget-full' style={{paddingBottom:"20px"}}>
                     <div style={{textAlign:"center"}} className="login-welcome-row">
                         <h1 >  <b>Forget Password </b></h1>
-                        <p> Enter your email to recive reset link</p>
+                        <p> Enter your email to recievenpmnp reset link</p>
                     </div>
                     <form className="my-form">
                         <div className="socials-row">

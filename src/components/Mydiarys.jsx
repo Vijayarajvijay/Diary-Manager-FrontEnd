@@ -89,7 +89,7 @@ onChange={(e) => setSearch(e.target.value)}
         
       }).map((entry, index) =>  (
         
-        <div key={index} className="cards">
+        <div key={index} style={{marginLeft:'150px'}} className="cards">
         
           <label id="features">
             <input className='inputli' type="checkbox" />

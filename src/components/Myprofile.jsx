@@ -17,7 +17,7 @@ function Myprofile() {
   }, []);
 
 
-  
+
   return (
     <div className='cardfull' >
 <div className="card" style={{marginTop:'100px'}}>
@@ -43,7 +43,7 @@ function Myprofile() {
 <p style={{fontSize:'15px',textAlign:'center'}}>{userData.createdAt}</p>
         </div>
         <div className="follow-btn">
-          <button style={{width:'500px',paddingRight:'150px'}} onClick={logout}  >Delet Account</button>
+          <button style={{width:'500px',paddingRight:'150px'}} onClick={logout}  >Delete Account</button>
         </div>
       </div>
       <div className="desc">
