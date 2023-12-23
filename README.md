@@ -53,6 +53,6 @@ Diary management project is a web-based application designed to streamline the p
 
         https://documenter.getpostman.com/view/30449043/2s9YkrbzYj
 
- ### 📝__Backent Code__  :
+ ### 📝__Backend Code__  :
     https://github.com/Vijayarajvijay/Diary-Manager-Backend/blob/main/README.md
  
