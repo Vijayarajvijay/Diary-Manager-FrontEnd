@@ -50,7 +50,8 @@ Diary management project is a web-based application designed to streamline the p
                            npm start
 
 5. __Poastman__ :
-           https://documenter.getpostman.com/view/30449043/2s9YkrbzYj
+
+        https://documenter.getpostman.com/view/30449043/2s9YkrbzYj
 
  ### 📝__Backent Code__  :
     https://github.com/Vijayarajvijay/Diary-Manager-Backend/blob/main/README.md
